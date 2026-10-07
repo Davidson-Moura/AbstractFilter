@@ -1,0 +1,182 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6E093006-BC98-49F4-B3FC-3ACFD254D019}|Tests\\Tests.csproj|c:\\users\\miste\\source\\testes\\abstractfilter\\tests\\litedbfiltertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E093006-BC98-49F4-B3FC-3ACFD254D019}|Tests\\Tests.csproj|solutionrelative:tests\\litedbfiltertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABF67706-372D-418F-993D-56652F2B6831}|AbstractFilter\\AbstractFilter.csproj|c:\\users\\miste\\source\\testes\\abstractfilter\\abstractfilter\\abfsortdirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABF67706-372D-418F-993D-56652F2B6831}|AbstractFilter\\AbstractFilter.csproj|solutionrelative:abstractfilter\\abfsortdirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E093006-BC98-49F4-B3FC-3ACFD254D019}|Tests\\Tests.csproj|c:\\users\\miste\\source\\testes\\abstractfilter\\tests\\mongofiltertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E093006-BC98-49F4-B3FC-3ACFD254D019}|Tests\\Tests.csproj|solutionrelative:tests\\mongofiltertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABF67706-372D-418F-993D-56652F2B6831}|AbstractFilter\\AbstractFilter.csproj|c:\\users\\miste\\source\\testes\\abstractfilter\\abstractfilter\\abfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABF67706-372D-418F-993D-56652F2B6831}|AbstractFilter\\AbstractFilter.csproj|solutionrelative:abstractfilter\\abfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABF67706-372D-418F-993D-56652F2B6831}|AbstractFilter\\AbstractFilter.csproj|c:\\users\\miste\\source\\testes\\abstractfilter\\abstractfilter\\abfparameterrebinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABF67706-372D-418F-993D-56652F2B6831}|AbstractFilter\\AbstractFilter.csproj|solutionrelative:abstractfilter\\abfparameterrebinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABF67706-372D-418F-993D-56652F2B6831}|AbstractFilter\\AbstractFilter.csproj|c:\\users\\miste\\source\\testes\\abstractfilter\\abstractfilter\\abfqueryableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABF67706-372D-418F-993D-56652F2B6831}|AbstractFilter\\AbstractFilter.csproj|solutionrelative:abstractfilter\\abfqueryableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABF67706-372D-418F-993D-56652F2B6831}|AbstractFilter\\AbstractFilter.csproj|c:\\users\\miste\\source\\testes\\abstractfilter\\abstractfilter\\abfilterbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABF67706-372D-418F-993D-56652F2B6831}|AbstractFilter\\AbstractFilter.csproj|solutionrelative:abstractfilter\\abfilterbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 197,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ABFParameterRebinder.cs",
+              "DocumentMoniker": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\AbstractFilter\\ABFParameterRebinder.cs",
+              "RelativeDocumentMoniker": "AbstractFilter\\ABFParameterRebinder.cs",
+              "ToolTip": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\AbstractFilter\\ABFParameterRebinder.cs",
+              "RelativeToolTip": "AbstractFilter\\ABFParameterRebinder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T13:39:31.349Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ABFilter.cs",
+              "DocumentMoniker": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\AbstractFilter\\ABFilter.cs",
+              "RelativeDocumentMoniker": "AbstractFilter\\ABFilter.cs",
+              "ToolTip": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\AbstractFilter\\ABFilter.cs",
+              "RelativeToolTip": "AbstractFilter\\ABFilter.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA2wCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T13:40:17.472Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ABFilterBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\AbstractFilter\\ABFilterBuilder.cs",
+              "RelativeDocumentMoniker": "AbstractFilter\\ABFilterBuilder.cs",
+              "ToolTip": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\AbstractFilter\\ABFilterBuilder.cs",
+              "RelativeToolTip": "AbstractFilter\\ABFilterBuilder.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAUwIAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T13:42:11.998Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MongoFilterTest.cs",
+              "DocumentMoniker": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\Tests\\MongoFilterTest.cs",
+              "RelativeDocumentMoniker": "Tests\\MongoFilterTest.cs",
+              "ToolTip": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\Tests\\MongoFilterTest.cs",
+              "RelativeToolTip": "Tests\\MongoFilterTest.cs",
+              "ViewState": "AgIAAC4BAAAAAAAAAAAAwDIBAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T13:50:31.599Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ABFSortDirection.cs",
+              "DocumentMoniker": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\AbstractFilter\\ABFSortDirection.cs",
+              "RelativeDocumentMoniker": "AbstractFilter\\ABFSortDirection.cs",
+              "ToolTip": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\AbstractFilter\\ABFSortDirection.cs",
+              "RelativeToolTip": "AbstractFilter\\ABFSortDirection.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAqwEAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T14:25:06.25Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ABFQueryableExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\AbstractFilter\\ABFQueryableExtensions.cs",
+              "RelativeDocumentMoniker": "AbstractFilter\\ABFQueryableExtensions.cs",
+              "ToolTip": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\AbstractFilter\\ABFQueryableExtensions.cs",
+              "RelativeToolTip": "AbstractFilter\\ABFQueryableExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T14:33:27.775Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LiteDBFilterTest.cs",
+              "DocumentMoniker": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\Tests\\LiteDBFilterTest.cs",
+              "RelativeDocumentMoniker": "Tests\\LiteDBFilterTest.cs",
+              "ToolTip": "C:\\Users\\miste\\source\\testes\\AbstractFilter\\Tests\\LiteDBFilterTest.cs",
+              "RelativeToolTip": "Tests\\LiteDBFilterTest.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAkwOYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T14:42:02.924Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a7673ab8-96c2-4f8f-86b9-ef4527b5383a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
