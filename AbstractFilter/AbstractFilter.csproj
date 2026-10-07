@@ -4,6 +4,23 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+	<PackageId>MDY.AbstractFilter</PackageId>
+	<Version>1.0.0</Version>
+
+	  <Authors>Davidson Moura</Authors>
+	  <Company>MDY</Company>
+
+	  <Description>Biblioteca para abstração de filtros com o banco de dados.</Description>
+
+	  <PackageTags>filter database abstraction</PackageTags>
+
+	  <RepositoryUrl>https://github.com/...</RepositoryUrl>
+
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  
   </PropertyGroup>
 
 </Project>
