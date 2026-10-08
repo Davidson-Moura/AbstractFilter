@@ -122,8 +122,6 @@ namespace Tests
         [Fact]
         public async Task TestGteAndLteFilters()
         {
-            var stopwatch = Stopwatch.StartNew();
-
             var collection = GetCollection();
             var builder = new ABFilterBuilder<Produto>();
             var filter = builder.And(
@@ -133,14 +131,25 @@ namespace Tests
 
             var exp = Builders<Produto>.Filter.Where(filter.ToExpression());
 
-            var filterTime = stopwatch.ElapsedMilliseconds;
-            stopwatch.Restart();
+            var resultado = await collection.Find(exp).ToListAsync();
+
+            Assert.Equal(2, resultado.Count);
+        }
+        [Fact]
+        public async Task TestGtAndLtFilters()
+        {
+            var collection = GetCollection();
+            var builder = new ABFilterBuilder<Produto>();
+            var filter = builder.And(
+                builder.Gt(p => p.Preco, 120m),
+                builder.Lt(p => p.Preco, 900m)
+            );
+
+            var exp = Builders<Produto>.Filter.Where(filter.ToExpression());
 
             var resultado = await collection.Find(exp).ToListAsync();
 
-            var dbTime = stopwatch.ElapsedMilliseconds;
-
-            Assert.Equal(2, resultado.Count);
+            Assert.Equal(1, resultado.Count);
         }
 
         [Fact]
@@ -163,7 +172,7 @@ namespace Tests
         {
             var collection = GetCollection();
             var builder = new ABFilterBuilder<Produto>();
-            var filter = builder.Regex(p => p.Nome, "Gamer");
+            var filter = builder.Regex(p => p.Nome, "gamer", "i");
 
             var resultado = await collection.Find(Builders<Produto>.Filter.Where(filter.ToExpression())).ToListAsync();
             Assert.Equal(2, resultado.Count);

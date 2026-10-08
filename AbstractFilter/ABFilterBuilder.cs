@@ -23,12 +23,22 @@ namespace AbstractFilter
             return new ABFExpressionFilter<T>(Expression.Lambda<Func<T, bool>>(body, fieldSelector.Parameters));
         }
 
+        public IABFFilter<T> Gt<TField>(Expression<Func<T, TField>> fieldSelector, TField value)
+        {
+            var body = Expression.GreaterThan(fieldSelector.Body, Expression.Constant(value, typeof(TField)));
+            return new ABFExpressionFilter<T>(Expression.Lambda<Func<T, bool>>(body, fieldSelector.Parameters));
+        }
+
         public IABFFilter<T> Lte<TField>(Expression<Func<T, TField>> fieldSelector, TField value)
         {
             var body = Expression.LessThanOrEqual(fieldSelector.Body, Expression.Constant(value, typeof(TField)));
             return new ABFExpressionFilter<T>(Expression.Lambda<Func<T, bool>>(body, fieldSelector.Parameters));
         }
-
+        public IABFFilter<T> Lt<TField>(Expression<Func<T, TField>> fieldSelector, TField value)
+        {
+            var body = Expression.LessThan(fieldSelector.Body, Expression.Constant(value, typeof(TField)));
+            return new ABFExpressionFilter<T>(Expression.Lambda<Func<T, bool>>(body, fieldSelector.Parameters));
+        }
         public IABFFilter<T> In<TField>(Expression<Func<T, TField>> fieldSelector, IEnumerable<TField> values)
         {
             var list = values.ToList();

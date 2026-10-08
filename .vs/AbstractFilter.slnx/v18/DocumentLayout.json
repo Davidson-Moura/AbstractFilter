@@ -7,28 +7,28 @@
       "RelativeMoniker": "D:0:0:{EC6BEA80-ED08-7048-D0F5-76F428369C01}|AbstractFilter\\AbstractFilter.csproj|solutionrelative:abstractfilter\\abstractfilter.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CF47860-2CEA-F379-09D8-9AEF27965D12}|Tests\\Tests.csproj|c:\\users\\miste\\source\\repos\\abstractfilter\\tests\\litedbfiltertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CF47860-2CEA-F379-09D8-9AEF27965D12}|Tests\\Tests.csproj|solutionrelative:tests\\litedbfiltertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC6BEA80-ED08-7048-D0F5-76F428369C01}|AbstractFilter\\AbstractFilter.csproj|c:\\users\\miste\\source\\repos\\abstractfilter\\abstractfilter\\abfparameterrebinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC6BEA80-ED08-7048-D0F5-76F428369C01}|AbstractFilter\\AbstractFilter.csproj|solutionrelative:abstractfilter\\abfparameterrebinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC6BEA80-ED08-7048-D0F5-76F428369C01}|AbstractFilter\\AbstractFilter.csproj|c:\\users\\miste\\source\\repos\\abstractfilter\\abstractfilter\\abfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC6BEA80-ED08-7048-D0F5-76F428369C01}|AbstractFilter\\AbstractFilter.csproj|solutionrelative:abstractfilter\\abfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CF47860-2CEA-F379-09D8-9AEF27965D12}|Tests\\Tests.csproj|c:\\users\\miste\\source\\repos\\abstractfilter\\tests\\mongofiltertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CF47860-2CEA-F379-09D8-9AEF27965D12}|Tests\\Tests.csproj|solutionrelative:tests\\mongofiltertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC6BEA80-ED08-7048-D0F5-76F428369C01}|AbstractFilter\\AbstractFilter.csproj|c:\\users\\miste\\source\\repos\\abstractfilter\\abstractfilter\\abfilterbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC6BEA80-ED08-7048-D0F5-76F428369C01}|AbstractFilter\\AbstractFilter.csproj|solutionrelative:abstractfilter\\abfilterbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CF47860-2CEA-F379-09D8-9AEF27965D12}|Tests\\Tests.csproj|c:\\users\\miste\\source\\repos\\abstractfilter\\tests\\mongofiltertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CF47860-2CEA-F379-09D8-9AEF27965D12}|Tests\\Tests.csproj|solutionrelative:tests\\mongofiltertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC6BEA80-ED08-7048-D0F5-76F428369C01}|AbstractFilter\\AbstractFilter.csproj|c:\\users\\miste\\source\\repos\\abstractfilter\\abstractfilter\\abfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC6BEA80-ED08-7048-D0F5-76F428369C01}|AbstractFilter\\AbstractFilter.csproj|solutionrelative:abstractfilter\\abfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC6BEA80-ED08-7048-D0F5-76F428369C01}|AbstractFilter\\AbstractFilter.csproj|c:\\users\\miste\\source\\repos\\abstractfilter\\abstractfilter\\abfsortdirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC6BEA80-ED08-7048-D0F5-76F428369C01}|AbstractFilter\\AbstractFilter.csproj|solutionrelative:abstractfilter\\abfsortdirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CF47860-2CEA-F379-09D8-9AEF27965D12}|Tests\\Tests.csproj|c:\\users\\miste\\source\\repos\\abstractfilter\\tests\\litedbfiltertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CF47860-2CEA-F379-09D8-9AEF27965D12}|Tests\\Tests.csproj|solutionrelative:tests\\litedbfiltertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC6BEA80-ED08-7048-D0F5-76F428369C01}|AbstractFilter\\AbstractFilter.csproj|c:\\users\\miste\\source\\repos\\abstractfilter\\abstractfilter\\abfparameterrebinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC6BEA80-ED08-7048-D0F5-76F428369C01}|AbstractFilter\\AbstractFilter.csproj|solutionrelative:abstractfilter\\abfparameterrebinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC6BEA80-ED08-7048-D0F5-76F428369C01}|AbstractFilter\\AbstractFilter.csproj|c:\\users\\miste\\source\\repos\\abstractfilter\\abstractfilter\\abfqueryableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ABFParameterRebinder.cs",
               "DocumentMoniker": "C:\\Users\\miste\\source\\repos\\AbstractFilter\\AbstractFilter\\ABFParameterRebinder.cs",
               "RelativeDocumentMoniker": "AbstractFilter\\ABFParameterRebinder.cs",
@@ -65,46 +65,33 @@
               "RelativeDocumentMoniker": "AbstractFilter\\ABFilter.cs",
               "ToolTip": "C:\\Users\\miste\\source\\repos\\AbstractFilter\\AbstractFilter\\ABFilter.cs",
               "RelativeToolTip": "AbstractFilter\\ABFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-07T13:40:17.472Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "ABFilterBuilder.cs",
               "DocumentMoniker": "C:\\Users\\miste\\source\\repos\\AbstractFilter\\AbstractFilter\\ABFilterBuilder.cs",
               "RelativeDocumentMoniker": "AbstractFilter\\ABFilterBuilder.cs",
               "ToolTip": "C:\\Users\\miste\\source\\repos\\AbstractFilter\\AbstractFilter\\ABFilterBuilder.cs",
               "RelativeToolTip": "AbstractFilter\\ABFilterBuilder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-07T13:42:11.998Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MongoFilterTest.cs",
-              "DocumentMoniker": "C:\\Users\\miste\\source\\repos\\AbstractFilter\\Tests\\MongoFilterTest.cs",
-              "RelativeDocumentMoniker": "Tests\\MongoFilterTest.cs",
-              "ToolTip": "C:\\Users\\miste\\source\\repos\\AbstractFilter\\Tests\\MongoFilterTest.cs",
-              "RelativeToolTip": "Tests\\MongoFilterTest.cs",
-              "ViewState": "AgIAAC4BAAAAAAAAAAAAwDIBAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-07T13:50:31.599Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "ABFSortDirection.cs",
               "DocumentMoniker": "C:\\Users\\miste\\source\\repos\\AbstractFilter\\AbstractFilter\\ABFSortDirection.cs",
               "RelativeDocumentMoniker": "AbstractFilter\\ABFSortDirection.cs",
               "ToolTip": "C:\\Users\\miste\\source\\repos\\AbstractFilter\\AbstractFilter\\ABFSortDirection.cs",
               "RelativeToolTip": "AbstractFilter\\ABFSortDirection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-07T14:25:06.25Z",
               "IsPinned": true
@@ -125,16 +112,29 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MongoFilterTest.cs",
+              "DocumentMoniker": "C:\\Users\\miste\\source\\repos\\AbstractFilter\\Tests\\MongoFilterTest.cs",
+              "RelativeDocumentMoniker": "Tests\\MongoFilterTest.cs",
+              "ToolTip": "C:\\Users\\miste\\source\\repos\\AbstractFilter\\Tests\\MongoFilterTest.cs",
+              "RelativeToolTip": "Tests\\MongoFilterTest.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAwwJQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T13:50:31.599Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "LiteDBFilterTest.cs",
               "DocumentMoniker": "C:\\Users\\miste\\source\\repos\\AbstractFilter\\Tests\\LiteDBFilterTest.cs",
               "RelativeDocumentMoniker": "Tests\\LiteDBFilterTest.cs",
               "ToolTip": "C:\\Users\\miste\\source\\repos\\AbstractFilter\\Tests\\LiteDBFilterTest.cs",
               "RelativeToolTip": "Tests\\LiteDBFilterTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAswPsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-07T14:42:02.924Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -144,9 +144,9 @@
               "RelativeDocumentMoniker": "AbstractFilter\\AbstractFilter.csproj",
               "ToolTip": "C:\\Users\\miste\\source\\repos\\AbstractFilter\\AbstractFilter\\AbstractFilter.csproj",
               "RelativeToolTip": "AbstractFilter\\AbstractFilter.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-10-07T15:33:45.831Z",
+              "WhenOpened": "2026-10-08T13:06:41.434Z",
               "EditorCaption": ""
             },
             {
