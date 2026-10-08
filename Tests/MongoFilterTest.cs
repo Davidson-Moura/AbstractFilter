@@ -2,6 +2,7 @@
 using MongoDB.Bson;
 using MongoDB.Driver;
 using System.Diagnostics;
+using System.Linq.Expressions;
 
 namespace Tests
 {
@@ -83,9 +84,41 @@ namespace Tests
             await collection.InsertManyAsync(produtos);
         }
     }
+    public class MongoDataStoreForTest
+    {
+        private readonly MongoTestFixture _fixture;
+
+        public MongoDataStoreForTest(MongoTestFixture fixture)
+        {
+            _fixture = fixture;
+        }
+        public void UpdateMany<T>(IABFFilter<T> filter, ABUpdateDefinition<T> updateDefinition) where T : class
+        {
+            var collection = _fixture.Client
+                .GetDatabase(_fixture.DatabaseName)
+                .GetCollection<T>(_fixture.CollectionName);
+
+            Expression<Func<T, bool>> predicate = filter.ToExpression();
+
+            var updateBuilder = Builders<T>.Update;
+            var updates = new List<UpdateDefinition<T>>();
+
+            foreach (var assignment in updateDefinition.Assignments)
+            {
+                updates.Add(updateBuilder.Set(assignment.Key, assignment.Value));
+            }
+
+            if (!updates.Any()) return;
+
+            var mongoUpdate = updateBuilder.Combine(updates);
+
+            collection.UpdateMany(predicate, mongoUpdate);
+        }
+    }
     public class MongoFilterTest : IClassFixture<MongoTestFixture>
     {
         private readonly MongoTestFixture _fixture;
+        private IMongoDatabase _database => _fixture.Client.GetDatabase(_fixture.DatabaseName);
 
         public MongoFilterTest(MongoTestFixture fixture)
         {
@@ -94,7 +127,7 @@ namespace Tests
 
         private IMongoCollection<Produto> GetCollection()
         {
-            return _fixture.Client.GetDatabase(_fixture.DatabaseName).GetCollection<Produto>(_fixture.CollectionName);
+            return _database.GetCollection<Produto>(_fixture.CollectionName);
         }
 
         [Fact]
@@ -332,6 +365,38 @@ namespace Tests
 
             Assert.Contains(resultado, r => r.NomeDoProduto == "Teclado Mecânico" && r.Valor == 250.00m);
             Assert.Contains(resultado, r => r.NomeDoProduto == "Rato Gamer" && r.Valor == 120.00m);
+        }
+        //[Fact]
+        public async Task TestUpdateMany_AgnosticUpdate()
+        {
+            var collection = GetCollection();
+
+            // 1. Instancia o DataStore desacoplado passando a fixture do MongoDB
+            var dataStore = new MongoDataStoreForTest(_fixture);
+
+            // 2. Prepara o filtro usando o seu ABFilterBuilder (ex: atualizar todos os produtos da categoria "Periféricos")
+            var filterBuilder = new ABFilterBuilder<Produto>();
+            var filter = filterBuilder.Eq(p => p.Categoria, "Periféricos");
+
+            // 3. Prepara a definição de atualização usando o UpdateBuilder abstrato
+            var updateDefinition = new ABUpdateBuilder<Produto>()
+                .Set(p => p.Preco, 999.99m)
+                .Set(p => p.Categoria, "Super Periféricos")
+                .Build();
+
+            // 4. Executa a atualização através da interface agnóstica
+            dataStore.UpdateMany(filter, updateDefinition);
+
+            // 5. Validação direta no banco para confirmar se os registros foram alterados corretamente
+            var periféricosAtualizados = await collection.Find(p => p.Categoria == "Super Periféricos").ToListAsync();
+
+            Assert.Equal(2, periféricosAtualizados.Count);
+            Assert.All(periféricosAtualizados, p => Assert.Equal(999.99m, p.Preco));
+
+            // Garante que os outros registros que não batiam com o filtro permaneceram intactos
+            var monitor = await collection.Find(p => p.Id == ObjectId.Parse("507f1f77bcf86cd799439013")).FirstOrDefaultAsync();
+            Assert.Equal(900.00m, monitor.Preco);
+            Assert.Equal("Monitores", monitor.Categoria);
         }
     }
 }

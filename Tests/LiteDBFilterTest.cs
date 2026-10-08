@@ -83,6 +83,38 @@ namespace Tests
             collection.InsertBulk(produtos);
         }
     }
+    public class LiteDbDataStoreForTest
+    {
+        private readonly LiteDbTestFixture _fixture;
+
+        public LiteDbDataStoreForTest(LiteDbTestFixture fixture)
+        {
+            _fixture = fixture;
+        }
+
+        public void UpdateMany<T>(IABFFilter<T> filter, ABUpdateDefinition<T> updateDefinition) where T : class
+        {
+            var collection = _fixture.Database.GetCollection<T>(_fixture.CollectionName);
+            var predicate = filter.ToExpression();
+
+            var documentsToUpdate = collection.Query().Where(predicate).ToList();
+
+            if (!documentsToUpdate.Any()) return;
+
+            foreach (var doc in documentsToUpdate)
+            {
+                foreach (var assignment in updateDefinition.Assignments)
+                {
+                    var propertyInfo = typeof(T).GetProperty(assignment.Key);
+                    if (propertyInfo != null && propertyInfo.CanWrite)
+                    {
+                        propertyInfo.SetValue(doc, assignment.Value);
+                    }
+                }
+            }
+            collection.Update(documentsToUpdate);
+        }
+    }
     public class LiteDBFilterTest : IClassFixture<LiteDbTestFixture>
     {
         private readonly LiteDbTestFixture _fixture;
@@ -263,6 +295,43 @@ namespace Tests
             Assert.Equal(2, resultado.Count);
             Assert.Contains(resultado, r => r.NomeDoProduto == "Teclado Mecânico" && r.Valor == 250.00m);
             Assert.Contains(resultado, r => r.NomeDoProduto == "Rato Gamer" && r.Valor == 120.00m);
+        }
+        [Fact]
+        public void TestUpdateMany_AgnosticUpdate()
+        {
+            var collection = GetCollection();
+
+            // 1. Instancia o adaptador de DataStore para o LiteDB na suíte de testes
+            var dataStore = new LiteDbDataStoreForTest(_fixture);
+
+            // 2. Prepara o filtro usando o seu ABFilterBuilder (atualizar todos da categoria "Periféricos")
+            var filterBuilder = new ABFilterBuilder<LiteDbProduto>();
+            var filter = filterBuilder.Eq(p => p.Categoria, "Periféricos");
+
+            // 3. Prepara a definição de atualização usando o UpdateBuilder abstrato
+            var updateDefinition = new ABUpdateBuilder<LiteDbProduto>()
+                .Set(p => p.Preco, 999.99m)
+                .Set(p => p.Categoria, "Super Periféricos")
+                .Build();
+
+            // 4. Executa a atualização através da camada agnóstica
+            dataStore.UpdateMany(filter, updateDefinition);
+
+            // 5. Validação direta na coleção do LiteDB para confirmar as alterações
+            var perifericosAtualizados = collection.Query()
+                .Where(p => p.Categoria == "Super Periféricos")
+                .ToList();
+
+            Assert.Equal(2, perifericosAtualizados.Count);
+            Assert.All(perifericosAtualizados, p => Assert.Equal(999.99m, p.Preco));
+
+            // Garante que registros de outras categorias não foram afetados
+            var monitor = collection.Query()
+                .Where(p => p.Categoria == "Monitores")
+                .FirstOrDefault();
+
+            Assert.NotNull(monitor);
+            Assert.Equal(900.00m, monitor.Preco);
         }
     }
 }
